@@ -1,0 +1,19 @@
+{
+  "name": "multi-vendor-ecommerce-platform",
+  "version": "1.0.0",
+  "description": "Complete Multi-Vendor E-Commerce Platform",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend",
+    "admin-panel",
+    "vendor-panel"
+  ],
+  "scripts": {
+    "install:all": "yarn install",
+    "dev": "yarn workspaces run dev",
+    "build": "yarn workspaces run build",
+    "test": "yarn workspaces run test",
+    "lint": "yarn workspaces run lint"
+  }
+}
